@@ -1,2 +1,5 @@
-/bin/
-/target/
+bin/
+target/
+.idea/
+.DS_Store
+CRUDprgm.iml

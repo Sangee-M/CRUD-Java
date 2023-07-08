@@ -332,3 +332,81 @@ org.postgresql.util.PSQLException: ERROR: argument of OR must be type boolean, n
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-util.jar:9.0.76]
 	at java.lang.Thread.run(Thread.java:1623) [?:?]
 2023-07-06 11:15:43.793 [http-nio-8080-exec-6] INFO  Studentservlet - DELETE operation completed successfully.
+2023-07-07 00:45:54.475 [http-nio-8080-exec-2] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 10:42:57.625 [http-nio-8080-exec-1] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 10:43:59.733 [http-nio-8080-exec-1] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 11:46:55.664 [http-nio-8080-exec-6] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 11:46:56.852 [http-nio-8080-exec-7] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 11:47:01.307 [http-nio-8080-exec-8] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 11:50:02.698 [http-nio-8080-exec-8] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 14:55:57.230 [http-nio-8080-exec-7] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 15:03:23.266 [http-nio-8080-exec-4] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 15:09:45.665 [http-nio-8080-exec-1] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 15:10:04.624 [http-nio-8080-exec-3] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 15:10:32.554 [http-nio-8080-exec-1] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 15:11:57.762 [http-nio-8080-exec-8] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 15:12:03.608 [http-nio-8080-exec-9] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 15:12:13.940 [http-nio-8080-exec-2] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 15:12:33.965 [http-nio-8080-exec-4] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 15:13:20.087 [http-nio-8080-exec-3] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 15:15:46.266 [http-nio-8080-exec-1] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 15:15:54.038 [http-nio-8080-exec-3] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 15:16:04.150 [http-nio-8080-exec-7] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 15:16:09.093 [http-nio-8080-exec-8] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 15:16:13.790 [http-nio-8080-exec-9] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 15:28:19.006 [http-nio-8080-exec-1] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 15:28:37.619 [http-nio-8080-exec-3] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 15:46:16.147 [http-nio-8080-exec-1] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 15:49:13.678 [http-nio-8080-exec-2] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 15:49:26.147 [http-nio-8080-exec-3] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 15:49:33.621 [http-nio-8080-exec-4] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 15:50:57.484 [http-nio-8080-exec-1] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 15:51:25.123 [http-nio-8080-exec-5] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 15:54:17.681 [http-nio-8080-exec-8] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 15:55:13.126 [http-nio-8080-exec-2] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 15:56:10.390 [http-nio-8080-exec-2] WARN  studentservlet.Student - Data not found
+2023-07-07 16:07:51.331 [http-nio-8080-exec-4] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 16:08:15.328 [http-nio-8080-exec-7] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 16:08:34.729 [http-nio-8080-exec-1] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 16:11:08.294 [http-nio-8080-exec-1] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 16:11:25.223 [http-nio-8080-exec-3] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 16:11:53.894 [http-nio-8080-exec-6] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 16:12:09.818 [http-nio-8080-exec-2] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 16:16:15.220 [http-nio-8080-exec-3] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 16:49:43.080 [http-nio-8080-exec-5] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 16:50:08.125 [http-nio-8080-exec-1] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 16:50:20.188 [http-nio-8080-exec-7] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 16:50:22.240 [http-nio-8080-exec-8] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 16:50:24.176 [http-nio-8080-exec-4] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 16:52:36.183 [http-nio-8080-exec-2] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 17:10:41.443 [http-nio-8080-exec-3] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 17:13:47.781 [http-nio-8080-exec-2] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 17:15:28.999 [http-nio-8080-exec-3] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 17:23:45.153 [http-nio-8080-exec-4] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 17:34:41.278 [http-nio-8080-exec-7] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 17:35:33.174 [http-nio-8080-exec-1] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 17:38:03.097 [http-nio-8080-exec-2] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 17:38:41.989 [http-nio-8080-exec-2] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 17:39:56.064 [http-nio-8080-exec-2] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 17:40:29.291 [http-nio-8080-exec-3] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 17:40:57.514 [http-nio-8080-exec-6] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 17:42:01.395 [http-nio-8080-exec-2] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 17:55:02.134 [http-nio-8080-exec-2] WARN  studentservlet.Student - Data not found
+2023-07-07 17:55:45.358 [http-nio-8080-exec-2] WARN  studentservlet.Student - Data not found
+2023-07-07 23:38:27.611 [http-nio-8080-exec-2] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 23:38:47.991 [http-nio-8080-exec-3] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 23:38:53.270 [http-nio-8080-exec-4] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 23:38:59.179 [http-nio-8080-exec-5] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 23:39:33.019 [http-nio-8080-exec-7] WARN  studentservlet.Student - Data not found
+2023-07-07 23:39:50.202 [http-nio-8080-exec-9] WARN  studentservlet.Student - Data not found
+2023-07-07 23:51:10.936 [http-nio-8080-exec-2] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 23:51:15.753 [http-nio-8080-exec-3] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 23:51:38.966 [http-nio-8080-exec-2] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 23:51:43.996 [http-nio-8080-exec-3] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 23:51:49.861 [http-nio-8080-exec-4] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 23:52:41.662 [http-nio-8080-exec-7] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-07 23:53:04.073 [http-nio-8080-exec-9] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-08 17:33:07.712 [http-nio-8080-exec-3] INFO  studentservlet.Student - DELETE operation completed successfully.
+2023-07-08 17:34:00.163 [http-nio-8080-exec-6] INFO  studentservlet.Student - CREATE operation completed successfully.
+2023-07-08 17:34:11.684 [http-nio-8080-exec-7] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-08 17:34:22.782 [http-nio-8080-exec-9] INFO  studentservlet.Student - READ operation completed successfully.
