@@ -410,3 +410,64 @@ org.postgresql.util.PSQLException: ERROR: argument of OR must be type boolean, n
 2023-07-08 17:34:00.163 [http-nio-8080-exec-6] INFO  studentservlet.Student - CREATE operation completed successfully.
 2023-07-08 17:34:11.684 [http-nio-8080-exec-7] INFO  studentservlet.Student - READ operation completed successfully.
 2023-07-08 17:34:22.782 [http-nio-8080-exec-9] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-10 15:42:35.234 [http-nio-8080-exec-3] ERROR studentservlet.Student - An error occurred during CRUD operations.
+org.postgresql.util.PSQLException: FATAL: password authentication failed for user "postgres"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:613) ~[postgresql-42.2.23.jar:42.2.23]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:161) ~[postgresql-42.2.23.jar:42.2.23]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:213) ~[postgresql-42.2.23.jar:42.2.23]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:51) ~[postgresql-42.2.23.jar:42.2.23]
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:223) ~[postgresql-42.2.23.jar:42.2.23]
+	at org.postgresql.Driver.makeConnection(Driver.java:465) ~[postgresql-42.2.23.jar:42.2.23]
+	at org.postgresql.Driver.connect(Driver.java:264) ~[postgresql-42.2.23.jar:42.2.23]
+	at java.sql.DriverManager.getConnection(DriverManager.java:683) ~[java.sql:?]
+	at java.sql.DriverManager.getConnection(DriverManager.java:230) ~[java.sql:?]
+	at dbconnection.Dbconnection.connectDb(Dbconnection.java:25) ~[classes/:?]
+	at studentservlet.Student.doGet(Student.java:36) ~[classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529) ~[servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623) ~[servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209) ~[catalina.jar:9.0.76]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[catalina.jar:9.0.76]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-websocket.jar:9.0.76]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[catalina.jar:9.0.76]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[catalina.jar:9.0.76]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[catalina.jar:9.0.76]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[catalina.jar:9.0.76]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481) ~[catalina.jar:9.0.76]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130) ~[catalina.jar:9.0.76]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[catalina.jar:9.0.76]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673) ~[catalina.jar:9.0.76]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[catalina.jar:9.0.76]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[catalina.jar:9.0.76]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-coyote.jar:9.0.76]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-coyote.jar:9.0.76]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926) ~[tomcat-coyote.jar:9.0.76]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791) ~[tomcat-coyote.jar:9.0.76]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-coyote.jar:9.0.76]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-util.jar:9.0.76]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-util.jar:9.0.76]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-util.jar:9.0.76]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+2023-07-10 15:43:09.143 [http-nio-8080-exec-3] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-10 16:12:17.357 [http-nio-8080-exec-9] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-10 16:12:20.845 [http-nio-8080-exec-2] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-10 16:12:22.359 [http-nio-8080-exec-6] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-10 16:14:24.795 [http-nio-8080-exec-5] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-10 16:14:27.615 [http-nio-8080-exec-2] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-10 16:14:35.332 [http-nio-8080-exec-3] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-10 16:14:36.732 [http-nio-8080-exec-5] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-10 16:15:29.440 [http-nio-8080-exec-3] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-10 16:15:34.548 [http-nio-8080-exec-8] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-10 16:16:06.100 [http-nio-8080-exec-5] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-10 16:16:10.688 [http-nio-8080-exec-6] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-10 16:20:18.395 [http-nio-8080-exec-3] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-10 16:20:25.456 [http-nio-8080-exec-5] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-10 16:21:06.031 [http-nio-8080-exec-3] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-10 16:21:14.765 [http-nio-8080-exec-5] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-10 16:29:13.760 [http-nio-8080-exec-1] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-10 16:48:54.687 [http-nio-8080-exec-3] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-10 16:49:01.014 [http-nio-8080-exec-5] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-10 16:51:21.227 [http-nio-8080-exec-4] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-10 17:01:16.933 [http-nio-8080-exec-3] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-10 17:01:25.849 [http-nio-8080-exec-9] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-10 17:02:10.222 [http-nio-8080-exec-4] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-10 17:02:19.901 [http-nio-8080-exec-5] INFO  studentservlet.Student - READ operation completed successfully.

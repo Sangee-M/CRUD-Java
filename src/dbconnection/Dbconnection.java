@@ -21,7 +21,7 @@ public class Dbconnection
             Class.forName("org.postgresql.Driver");
             String url = "jdbc:postgresql://localhost:5432/myDB";
             String username = "postgres";
-            String password = "your password here";
+            String password = "sangeepsql";
             connection=getConnection(url, username, password);
 
         }

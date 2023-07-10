@@ -5,7 +5,7 @@ import javax.servlet.*;
 import java.sql.*;
 import javax.servlet.http.*;
 import org.jetbrains.annotations.NotNull;
-import javax.servlet.annotation.WebServlet;
+//import javax.servlet.annotation.WebServlet;
 import java.io.IOException;
 import java.sql.PreparedStatement;
 import org.apache.logging.log4j.LogManager;
@@ -13,7 +13,7 @@ import org.apache.logging.log4j.Logger;
 import dbconnection.Dbconnection;
 
 
-@WebServlet(urlPatterns = {"/student", "/all-students"})
+//@WebServlet(urlPatterns = {"/student", "/all-students"})
 
 public class Student extends HttpServlet
 {
