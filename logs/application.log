@@ -486,3 +486,16 @@ org.postgresql.util.PSQLException: FATAL: password authentication failed for use
 2023-07-11 15:45:55.235 [http-nio-8080-exec-3] INFO  studentservlet.Student - READ operation completed successfully.
 2023-07-11 15:45:58.451 [http-nio-8080-exec-4] INFO  studentservlet.Student - READ operation completed successfully.
 2023-07-11 15:46:47.508 [http-nio-8080-exec-3] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-11 19:08:58.251 [http-nio-8080-exec-3] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-11 19:09:09.122 [http-nio-8080-exec-4] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-11 19:09:16.070 [http-nio-8080-exec-5] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-11 19:09:16.147 [http-nio-8080-exec-6] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-11 19:11:20.001 [http-nio-8080-exec-3] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-11 19:11:24.953 [http-nio-8080-exec-4] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-11 21:46:06.651 [http-nio-8080-exec-3] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-11 21:46:12.040 [http-nio-8080-exec-4] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-11 21:53:57.896 [http-nio-8080-exec-3] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-11 21:54:01.630 [http-nio-8080-exec-4] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-11 21:54:03.496 [http-nio-8080-exec-5] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-11 21:54:07.786 [http-nio-8080-exec-6] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-11 21:54:09.423 [http-nio-8080-exec-7] WARN  studentservlet.Student - Data not found

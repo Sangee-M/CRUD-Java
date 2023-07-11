@@ -16,6 +16,7 @@ public class Myfilter implements Filter{
         chain.doFilter(req, resp);//sends request to next resource
 
         out.print("\nfilter is invoked after");
+
     }
     public void destroy() {}
 }
