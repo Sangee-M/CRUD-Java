@@ -11,11 +11,11 @@ public class Myfilter implements Filter{
                          FilterChain chain) throws IOException, ServletException {
 
         PrintWriter out=resp.getWriter();
-        out.print("filter is invoked before");
+        out.print("filter is invoked before\n");
 
         chain.doFilter(req, resp);//sends request to next resource
 
-        out.print("filter is invoked after");
+        out.print("\nfilter is invoked after");
     }
     public void destroy() {}
 }

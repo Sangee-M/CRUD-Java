@@ -10,7 +10,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.logging.log4j.Logger;
 public class Dbconnection
 {
-    public Connection connectDb(HttpServletRequest req, HttpServletResponse res, Logger log) throws IOException, SQLException
+    public Connection connectDb(HttpServletResponse res, Logger log) throws IOException, SQLException
     {
         Connection connection=null;
         List<Map<String, Object>> list= new ArrayList<>();;

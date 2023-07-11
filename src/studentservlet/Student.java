@@ -12,8 +12,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import dbconnection.Dbconnection;
 
-
-//@WebServlet(urlPatterns = {"/student", "/all-students"})
+//@WebServlet("/student/*")
 
 public class Student extends HttpServlet
 {
@@ -24,38 +23,36 @@ public class Student extends HttpServlet
     Map<String, Object> map;
     PreparedStatement selectStatement;
     ResultSet resultSet;
+
+
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
-    {
-            // Perform READ operation
 
-            String url = request.getRequestURI();
-            String selectQuery;
-            try
-            {
-                connection = obj.connectDb(request, response, logger); //connecting database by user-defined method "connectDb"
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        // Perform READ operation
 
-                if (url.endsWith("/student")) //Retrieving data of a student by roll no.
+        String pathInfo = request.getPathInfo();
+        String selectQuery;
+
+            try {
+                connection = obj.connectDb(response, logger); //connecting database by user-defined method "connectDb"
+                selectQuery = "SELECT * FROM Student";
+                selectStatement = connection.prepareStatement(selectQuery);
+
+                if (pathInfo!=null)
                 {
-                    int rno = Integer.parseInt(request.getParameter("rno")); // Retrieve parameters from the request
+                    String[] uriparam = pathInfo.split("/");
+                    int rno = Integer.parseInt(uriparam[1]);
                     selectQuery = "SELECT * FROM Student WHERE rno = ?";
                     selectStatement = connection.prepareStatement(selectQuery);
                     selectStatement.setInt(1, rno);
-                }
-                else if(url.endsWith("/all-students")) //Retrieving all student's data
-                {
-                    selectQuery = "SELECT * FROM Student";
-                    selectStatement = connection.prepareStatement(selectQuery);
                 }
                 resultSet = selectStatement.executeQuery();
 
                 list = new ArrayList<>();
                 map = new HashMap<>();
 
-                if(resultSet.next())
-                {
-                    do
-                    {
+                if (resultSet.next()) {
+                    do {
                         map.put("RNO", resultSet.getInt("rno"));
                         map.put("Student name", resultSet.getString("sname"));
                         map.put("Age", resultSet.getInt("age"));
@@ -63,11 +60,9 @@ public class Student extends HttpServlet
                         map.put("DOB", resultSet.getString("dob"));
                         list.add(map);
                         map = new HashMap<>();
-                    }while(resultSet.next());
+                    } while (resultSet.next());
                     logger.info("READ operation completed successfully.");// Log the READ operation
-                }
-                else
-                {
+                } else {
                     response.setStatus(HttpServletResponse.SC_NOT_FOUND);
                     map.put("warning:", "student not found");
                     list.add(map);
@@ -77,12 +72,11 @@ public class Student extends HttpServlet
                 resultSet.close();
                 selectStatement.close();
                 connection.close();// Close the database connection
-            }
-            catch (SQLException e)
-            {
+            } catch (SQLException e) {
                 throw new RuntimeException(e);
             }
         }
+
     @Override
     protected void doDelete(@NotNull HttpServletRequest request, @NotNull HttpServletResponse response) throws ServletException, IOException
     {
@@ -91,7 +85,7 @@ public class Student extends HttpServlet
 
         try
         {
-            connection = obj.connectDb(request, response, logger); //connecting database by user-defined method "connectDb"
+            connection = obj.connectDb(response, logger); //connecting database by user-defined method "connectDb"
 
             String deleteQuery;
             deleteQuery = "DELETE FROM Student WHERE rno = ?";
@@ -142,10 +136,9 @@ public class Student extends HttpServlet
 
         try
         {
-            connection = obj.connectDb(request, response, logger);
+            connection = obj.connectDb(response, logger);
 
-            String insertQuery;
-            insertQuery = "INSERT INTO Student (rno,sname,age,dept,dob) VALUES (?,?,?,?,?)";
+            String insertQuery="INSERT INTO Student (rno,sname,age,dept,dob) VALUES (?,?,?,?,?)";
             PreparedStatement insertStatement = connection.prepareStatement(insertQuery);
             insertStatement.setInt(1, rno);
             insertStatement.setString(2, sname);
@@ -179,7 +172,7 @@ public class Student extends HttpServlet
         String dob = request.getParameter("dob");
 
         try {
-            Connection connection = obj.connectDb(request, response, logger);
+            Connection connection = obj.connectDb(response, logger);
             String updateQuery = "UPDATE Student SET sname = ?,age = ?,dept = ?,dob = ? WHERE rno = ?";
             PreparedStatement updateStatement = connection.prepareStatement(updateQuery);
             updateStatement.setString(1, sname);

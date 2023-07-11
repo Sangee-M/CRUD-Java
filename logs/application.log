@@ -471,3 +471,18 @@ org.postgresql.util.PSQLException: FATAL: password authentication failed for use
 2023-07-10 17:01:25.849 [http-nio-8080-exec-9] INFO  studentservlet.Student - READ operation completed successfully.
 2023-07-10 17:02:10.222 [http-nio-8080-exec-4] INFO  studentservlet.Student - READ operation completed successfully.
 2023-07-10 17:02:19.901 [http-nio-8080-exec-5] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-11 15:39:23.533 [http-nio-8080-exec-3] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-11 15:39:28.041 [http-nio-8080-exec-4] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-11 15:39:28.716 [http-nio-8080-exec-5] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-11 15:40:02.108 [http-nio-8080-exec-3] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-11 15:40:09.158 [http-nio-8080-exec-4] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-11 15:40:10.470 [http-nio-8080-exec-5] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-11 15:41:51.962 [http-nio-8080-exec-1] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-11 15:41:56.982 [http-nio-8080-exec-4] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-11 15:41:58.325 [http-nio-8080-exec-5] WARN  studentservlet.Student - Data not found
+2023-07-11 15:43:18.568 [http-nio-8080-exec-2] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-11 15:43:28.003 [http-nio-8080-exec-5] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-11 15:43:28.047 [http-nio-8080-exec-6] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-11 15:45:55.235 [http-nio-8080-exec-3] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-11 15:45:58.451 [http-nio-8080-exec-4] INFO  studentservlet.Student - READ operation completed successfully.
+2023-07-11 15:46:47.508 [http-nio-8080-exec-3] INFO  studentservlet.Student - READ operation completed successfully.

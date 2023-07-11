@@ -11,8 +11,7 @@
 
     <servlet-mapping>
       <servlet-name>Task1Servlet</servlet-name>
-      <url-pattern>/all-students</url-pattern>
-      <url-pattern>/student</url-pattern>
+      <url-pattern>/students/*</url-pattern>
     </servlet-mapping>
 
   <filter>
@@ -22,8 +21,7 @@
 
   <filter-mapping>
     <filter-name>f1</filter-name>
-    <url-pattern>/all-students</url-pattern>
-    <url-pattern>/student</url-pattern>
+    <url-pattern>/students/*</url-pattern>
   </filter-mapping>
 
 </web-app>
