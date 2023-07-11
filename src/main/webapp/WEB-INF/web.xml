@@ -3,4 +3,26 @@
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+
+    <servlet>
+      <servlet-name>Task1Servlet</servlet-name>
+      <servlet-class>studentservlet.Student</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+      <servlet-name>Task1Servlet</servlet-name>
+      <url-pattern>/students/*</url-pattern>
+    </servlet-mapping>
+
+  <filter>
+    <filter-name>f1</filter-name>
+    <filter-class>Myfilter</filter-class>
+  </filter>
+
+  <filter-mapping>
+    <filter-name>f1</filter-name>
+    <url-pattern>/students/*</url-pattern>
+  </filter-mapping>
+
 </web-app>
+
